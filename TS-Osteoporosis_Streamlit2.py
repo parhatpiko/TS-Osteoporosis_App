@@ -39,25 +39,25 @@ with col1:
     inputs = {}
     for feature in feature_names:
         if feature == 'Neutrophil':
-            inputs[feature] = st.number_input(f"{feature}:", min_value=0.0, max_value=100.0, value='')
+            inputs[feature] = st.number_input(f"{feature}:", min_value=0.0, max_value=100.0)
         elif feature == 'HB':
-            inputs[feature] = st.number_input(f"{feature} (Hemoglobin):", min_value=0.0, max_value=200.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Hemoglobin):", min_value=0.0, max_value=200.0)
         elif feature == 'ESR':
-            inputs[feature] = st.number_input(f"{feature} (Erythrocyte Sedimentation Rate):", min_value=0.0, max_value=100.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Erythrocyte Sedimentation Rate):", min_value=0.0, max_value=100.0)
         elif feature == 'TC':
-            inputs[feature] = st.number_input(f"{feature} (Total Cholesterol):", min_value=0.0, max_value=400.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Total Cholesterol):", min_value=0.0, max_value=400.0)
         elif feature == 'K':
-            inputs[feature] = st.number_input(f"{feature} (Potassium):", min_value=0.0, max_value=10.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Potassium):", min_value=0.0, max_value=10.0)
         elif feature == 'eGFR':
-            inputs[feature] = st.number_input(f"{feature} (Estimated Glomerular Filtration Rate):", min_value=0.0, max_value=120.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Estimated Glomerular Filtration Rate):", min_value=0.0, max_value=120.0)
         elif feature == 'CYS_C':
-            inputs[feature] = st.number_input(f"{feature} (Cystatin C):", min_value=0.0, max_value=100.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Cystatin C):", min_value=0.0, max_value=100.0)
         elif feature == 'TP':
-            inputs[feature] = st.number_input(f"{feature} (Total Protein):", min_value=0.0, max_value=100.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Total Protein):", min_value=0.0, max_value=100.0)
         elif feature == 'ALB':
-            inputs[feature] = st.number_input(f"{feature} (Albumin):", min_value=0.0, max_value=100.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Albumin):", min_value=0.0, max_value=100.0)
         elif feature == 'LDL':
-            inputs[feature] = st.number_input(f"{feature} (Low-Density Lipoprotein):", min_value=0.0, max_value=200.0, value='')
+            inputs[feature] = st.number_input(f"{feature} (Low-Density Lipoprotein):", min_value=0.0, max_value=200.0)
 
 # Process inputs and make predictions
 feature_values = [inputs[feature] for feature in feature_names]
